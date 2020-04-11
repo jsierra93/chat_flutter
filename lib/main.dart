@@ -56,7 +56,7 @@ class ChatScreenState extends State<ChatScreen> with TickerProviderStateMixin {
           decoration: Theme.of(context).platform == TargetPlatform.iOS //new
               ? new BoxDecoration(                                     //new
             border: new Border(                                  //new
-              top: new BorderSide(color: Colors.grey[200]),      //new
+              top: new BorderSide(color: Colors.blue),      //new
             ),                                                   //new
           )                                                      //new
               : null),                                                 //modified
@@ -170,13 +170,13 @@ class ChatMessage extends StatelessWidget {
 }
 
 final ThemeData kIOSTheme = new ThemeData(
-  primarySwatch: Colors.orange,
-  primaryColor: Colors.grey[100],
+  primarySwatch: Colors.blue,
+  primaryColor: Colors.blue,
   primaryColorBrightness: Brightness.light,
 );
 
 final ThemeData kDefaultTheme = new ThemeData(
-  primarySwatch: Colors.grey,
+  primarySwatch: Colors.blue,
   accentColor: Colors.blue,
 );
 
